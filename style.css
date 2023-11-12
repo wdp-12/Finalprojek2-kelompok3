@@ -1,0 +1,383 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif; /* Mengganti font menjadi Nunito */
+}
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+}
+.navbar-toggler-icon {
+    background-color: #234CAD;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #234CAD;
+    margin-right: 4px;
+    font-size: 18px;
+    padding: 13px 17px;
+}
+
+.btn-header button {
+    margin-left: 10px;
+    border-radius: 25px;
+    padding: 8px 36px;
+    text-align: center;
+    color: #234CAD;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    transition: all 0.3s;
+}
+
+.btn-header button:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#LoginButton {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #234CAD;
+}
+
+#SignUpButton {
+    background-color: #F2F6FF;
+
+}
+/* Banner */
+.banner-wrapper {
+    display: flex;
+    position: relative;
+    max-width: 1240px;
+    height: 575px;
+    margin-top: 100px;
+    border-radius: 60px;
+    background-color: #F2F6FF;
+}
+
+.text-content:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 375px;
+    height: 100%;
+    margin: 0 100px;
+}
+
+.text-content:nth-child(1) h3,
+.text-content:nth-child(1) p,
+.text-content:nth-child(1) button {
+    color: #234CAD;
+}
+
+.text-content:nth-child(1) h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.text-content:nth-child(1) p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.text-content:nth-child(1) button {
+    width: 200px;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 100px;
+    border: 3px solid #234CAD;
+    background-color: #F2F6FF;
+    transition: all 0.2s;
+}
+
+.text-content:nth-child(1) button:hover {
+    transform: scale(0.7);
+}
+
+.card-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card1,
+.card8,
+.card-content {
+    box-shadow: 0 0 40px rgba(35, 76, 173, 0.1);
+}
+
+.card1,
+.card8 {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card1 img,
+.card8 img {
+    position: relative;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card2 .card-content,
+.card4 .card-content,
+.card6 .card-content,
+.card7 .card-content {
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card2 .card-content .progress img,
+.card5 .card-content .progress img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px;
+    border-radius: 100px;
+}
+
+.card2 .card-content .progress,
+.card5 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    background: radial-gradient(closest-side, white 90%, transparent 97%), conic-gradient(#234CAD 25%, #F2F6FF 0);
+}
+
+.card5 .card-content .progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+    background:
+        radial-gradient(closest-side, white 90%, transparent 97%),
+        conic-gradient(#234CAD 75%, #F2F6FF 0);
+}
+.card2 .card-content .text-content p:nth-child(1),
+.card3 .card-content .text-content p:nth-child(1),
+.card4 .card-content .text-content p:nth-child(1),
+.card6 .card-content .text-content p:nth-child(1),
+.card7 .card-content .text-content p:nth-child(1),
+.banner-wrapper .text-content h3,
+.banner-wrapper .text-content p,
+.banner-wrapper .text-content button {
+    color: #234CAD;
+}
+
+.card2 .card-content .text-content p:nth-child(1),
+.card3 .card-content .text-content p:nth-child(1),
+.card4 .card-content .text-content p:nth-child(1),
+.card6 .card-content .text-content p:nth-child(1),
+.card7 .card-content .text-content p:nth-child(1) {
+    font-weight: 700;
+}
+
+.card2 .card-content .text-content p:last-child,
+.card3 .card-content .text-content p:last-child,
+.card4 .card-content .text-content p:nth-child(2),
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(2),
+.card6 .card-content .text-content p:nth-child(3),
+.card7 .card-content .text-content p:last-child {
+    margin-top: 7.4px;
+    font-size: 0.75em;
+}
+
+.card3 .card-content {
+    width: 276px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card3 .card-content div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.card3 .card-content .icon,
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card3 .card-content .icon {
+    border: 3px solid #234CAD;
+}
+
+.card3 .card-content .meeting-parts {
+    display: flex;
+    margin: 0 20px;
+}
+
+.meeting-parts div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: #F2F6FF;
+    cursor: pointer;
+}
+
+.meeting-parts div p {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+
+.meeting-parts div:nth-child(2) {
+    position: relative;
+    left: -10px;
+}
+
+.meeting-parts div:nth-child(3) {
+    position: relative;
+    left: -20px;
+}
+
+.meeting-parts div:last-child {
+    position: relative;
+    left: -30px;
+}
+
+.card4 .card-content .icon,
+.card6 .card-content .icon,
+.card7 .card-content .icon {
+    position: relative;
+    font-weight: 700;
+    background-color: #F2F6FF;
+}
+
+.card4 .card-content .icon .notif,
+.card6 .card-content .icon .notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: #234CAD;
+}
+
+.card4 .card-content .icon p,
+.card6 .card-content .icon p {
+    margin-bottom: 0;
+}
+
+.card4 .card-content .icon .notif p,
+.card6 .card-content .icon .notif p {
+    font-size: 8px;
+    line-height: 8px;
+    font-weight: 700;
+    color: white;
+}
+
+.card4 .card-content .text-content,
+.card6 .card-content .text-content {
+    position: relative;
+    width: 230px;
+    height: 45px;
+}
+
+.card4 .card-content .text-content p:nth-child(3),
+.card6 .card-content .text-content p:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.card5 {
+    position: absolute;
+    top: 0;
+}
+
+.card5 .card-content {
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    width: 130px;
+    height: 160px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card5 .card-content .progress {
+    margin-top: 0;
+}
+
+.card5 .card-content .text-content p {
+    font-size: 0.75em;
+}
+
+.card6 .card-content {
+    position: absolute;
+    bottom: 220px;
+    left: 300px;
+}
+
+.card7 .card-content {
+    position: absolute;
+    bottom: 95px;
+    left: 400px;
+}
+
+.card8 {
+    position: absolute;
+    bottom: -5px;
+    left: 375px;
+}
+
+.special-color {
+    color: #234CAD;
+}
+
+.icon.special-color {
+    background-color: #234CAD; 
+}
+
+.icon.special-color .notif {
+    background-color: #234CAD; 
+    color: #234CAD; 
+}
+
+.icon.special-color p {
+    color: #234CAD; 
+}
