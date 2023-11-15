@@ -33,7 +33,7 @@ body {
     text-align: center;
     font-size: 48px;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 50px; /* 116.667% */
@@ -44,7 +44,7 @@ body {
     color: #234CAD;
     text-align: center;
     font-family: Nunito;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -113,6 +113,7 @@ body {
 /* About*/
 
 .right-section {
+    text-align: left;
     flex: 1;
     padding: 80px;
     box-sizing: border-box;
@@ -165,7 +166,6 @@ body {
     transition: .5s ease;
     text-decoration: none;
 }
-
 
 .schedule-container{
     width: 100%;
@@ -424,6 +424,7 @@ body {
 #price {
     min-height: 100%;
     padding: 100px 9% 100px;
+    text-align: center;
 }
 
 .price h2 {
@@ -433,88 +434,81 @@ body {
     text-align: center;
     font-size: 48px;
     margin-top: -40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 500;
-    line-height: 50px; /* 116.667% */
+    line-height: 50px;
 }
-
 
 .price p {
     color: #234CAD;
     text-align: center;
     font-family: Nunito;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 26px;
 }
-
-.btn-price {
-    display : inline-block;
-    padding: 10px 28px;
-    margin-top: -20px;
-    background-color: var(--bg-color);
-    border-radius:  40px;
-    font-size: 16px;
-    color: var(--text-color);
-    letter-spacing: .10px;
-    font-weight: 600;
-    transition: .5s ease;
-    text-decoration: none;
-}
-
-.btn-price:hover {
-    background-color: var(--bg-color);
-    border-color: var(--main-color);
-}
-
-.btn-price2 {
-    display : inline-block;
-    padding: 10px 25px;
-    margin-top: -20px;
-    background-color: var(--bg-color);
-    border-radius:  40px;
-    border-style: solid;
-    border-color: var(--main-color);
-    font-size: 16px;
-    color: var(--text-color);
-    letter-spacing: .10px;
-    font-weight: 600;
-    transition: .5s ease;
-    text-decoration: none;
-}
-
-.btn-price2:hover {
-    background-color: var(--bg-color);
-    border-color: var(--main-color);
-}
-
 
 .price-countainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    
 }
 
-.price-countainer .price-box {
-    Flex: 1 1 500px;
+.price-box,
+.price-box2 {
+    flex: 1 1 500px;
     background: var(--second-bg-color);
     width: 300px;
     height: 300px;
-    padding: 30px 20px 40px;
     border-radius: 40px;
     text-align: center;
-    border: .20px solid var(--bg-color);
-    transition: .5s ease;
+    border: 0.20px solid var(--bg-color);
+    transition: 0.5s ease;
+    position: relative;
+    
+}
+.price-box2{
+    outline: 2px solid #234CAD;
 }
 
-.price-countainer .price-box:hover {
+.btn-price,
+.btn-price2 {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 28px;
+    background-color: var(--bg-color);
+    border-radius: 50px; 
+    font-size: 16px;
+    font-weight: bold; 
+    color: var(--text-color);
+    letter-spacing: 0.10px;
+    margin: 25px 0; 
+    border: none;
+    outline: 2px solid #234CAD; /* Menambahkan outline */
+}
+
+.btn-price,
+.btn-price2 button {
+ margin-top: 50px;
+}
+
+.btn-price:hover,
+.btn-price2:hover {
     background-color: var(--bg-color);
     border-color: var(--main-color);
-    transform: scale(1.02);
+}
+
+.price-countainer .price-box:hover,
+.price-countainer .price-box2:hover {
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
 }
 
 .price-box h2 {
