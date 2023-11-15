@@ -32,8 +32,8 @@ body {
     color: #234CAD;
     text-align: center;
     font-size: 48px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 50px; /* 116.667% */
@@ -52,6 +52,7 @@ body {
 }
 
 .features2 {
+    display: flex;
     background-color: #F2F6FF;
     border-radius: 60px;
     height: 575px;
@@ -59,18 +60,25 @@ body {
     color:#234CAD; 
 }
 .features2-left {
-    width: 300px;
-} 
+    margin: 100px;
+    margin-right: 0;
+}
 
 .features2-left .row-1 {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 .features2-left .row-2 {
     margin-top: 20px;
+    text-align: right;
 }
+
 .features2-center {
+    display: flex;
+    flex: 1;
+    justify-content: end;
     position: relative;
-    margin-left: 30px;
+    margin-left: 20px;
+    /* margin-top: 35px; */
 }
 
 .features2-center .row-1 {
@@ -78,14 +86,29 @@ body {
 }
 .features2-center .row-2 {
     margin-top: 30px;
+    padding-left: 30px;
 }
-.features2-center .row-3 {
+
+.features2-center2 {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+}
+.features2-center2 .row-1 {
+    margin-top: 30px;
+}
+.features2-center2 .row-2 {
     margin-top: 30px;
 }
 
-.features2-center .row-4 {
-    margin-top: 30px;
+.features2-center3 {
+    margin-left: 20px;
 }
+.features2-center4 {
+    margin-left: 50px;
+    margin-top: -40px;
+}
+/* End */
 
 /* About*/
 
@@ -99,7 +122,6 @@ body {
     border-radius: 60px;
     height: 500px;
     width: 100%;
-    /* margin-left: 80px; */
     color: #234CAD;
 }
 
@@ -108,13 +130,40 @@ body {
     clear: both;
     color: #234CAD;
     font-size: 48px;
-    margin-top: -50px;
-    margin-bottom: 10px;
+    margin-top: -40px;
     padding: 40px 3% 25px;
     font-style: normal;
     font-weight: 700;
     line-height: 56px; /* 116.667% */
     word-wrap: break-word;
+}
+
+.right-section p{
+    display: inline-block;
+    clear: both;
+    color: #234CAD;
+    font-size: 48px;
+    margin-top: -40px;
+    padding: 40px 3% 25px;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    word-wrap: break-word;
+}
+
+.right-section .btn-about {
+    display : inline-block;
+    padding: 10px 30px;
+    margin-top: -40px;
+    background-color: var(--bg-color);
+    border-radius:  40px;
+    border-style: solid;
+    border-color: var(--main-color);
+    font-size: 16px;
+    color: var(--text-color);
+    letter-spacing: .10px;
+    font-weight: 600px;
+    transition: .5s ease;
+    text-decoration: none;
 }
 
 

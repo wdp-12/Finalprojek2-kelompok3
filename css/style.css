@@ -383,8 +383,10 @@ body {
 .icon.special-color p {
     color: #234CAD; 
 }
+
+/* Newslatter & Footer */
   
-  .container {
+  .container-newslatter {
     max-width: 600px;
     margin: 30px auto;
     padding: 30px;
@@ -417,9 +419,11 @@ body {
   }
   
   button[type="submit"] {
-    padding: 10px;
+    padding: 7px;
+    margin-left: -50px;
     width: 40px;
     background-color: #234CAD;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
