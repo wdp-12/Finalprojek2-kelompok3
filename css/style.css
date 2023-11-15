@@ -1,6 +1,8 @@
 body {
     background-color: #ffffff;
-    font-family: 'Nunito', sans-serif; /* Mengganti font menjadi Nunito */
+    font-family: 'Nunito', sans-serif; 
+    background-color: #f8f8f8;
+    color: #234CAD;/* Mengganti font menjadi Nunito */
 }
 /* Navbar */
 .navbar {
@@ -47,8 +49,8 @@ body {
     display: flex;
     position: relative;
     max-width: 1240px;
-    height: 595px;
-    margin-top: 120px;
+    height: 575px;
+    margin-top: 100px;
     border-radius: 60px;
     background-color: #F2F6FF;
 }
@@ -382,163 +384,47 @@ body {
     color: #234CAD; 
 }
 
-/* Style label */
-.label-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 114px;
-}
-
-.label-wrapper section {
-    display: flex;
-    color: #234CAD
-}
-
-.label-wrapper section .icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Newslatter & Footer */
+  
+  .container-newslatter {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
     background-color: #F2F6FF;
-    margin-right: 30px;
-}
-
-.label-wrapper section .text-content {
-    margin-top: 8px;
-}
-
-.label-wrapper section p:nth-child(1) {
-    font-size: 30px;
-    line-height: 49px;
-    font-weight: 600;
-    margin: 0;
-}
-
-.label-wrapper section p:nth-child(2) {
-    font-size: 22px;
-    line-height: 36px;
-    font-weight: 400;
-}
-
-/* Style Produk 1 */
-#product .product {
-    padding-top: 150px;
-}
-
-.product-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.product-wrapper section:nth-child(1) {
-    width: 575px;
-    height: 575px;
-    background-color: #F2F6FF;
-    border-radius: 60px;
-}
-
-.product-wrapper section:nth-child(2) .text-content {
-    justify-content: center;
-}
-.product-wrapper section:nth-child(2) .text-content p{
-    margin-top: 15px;
-    margin-bottom: 38px;
-}
-.product-wrapper section:nth-child(2) .text-content button:hover {
-    transform: scale(0.7);
-}
-
-.product-content {
-    border-radius: 25px;
-    background-color: white;
-    display: flex;
-    width: 460px;
-    height: 125px;
-    margin: auto;
-    align-items: center;
-}
-
-.product1 .product-content {
-    margin-top: 108px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 100px;
+  }
+  
+  h2 {
     margin-bottom: 10px;
-}
-
-
-.product2 .product-content {
-    margin-bottom: -20px;
-}
-
-.product-content .icon {
-    position: relative;
-    font-weight: 700;
-    background-color: #F2F6FF;
-    margin: 0 20px;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.product-content .icon .notif {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    border: 2px solid white;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  br {
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    padding: 7px;
+    margin-left: -50px;
+    width: 40px;
     background-color: #234CAD;
-}
-
-.product-content .icon .notif p {
-    color: white;
-    margin: auto;
-    padding-top: 1px;
-    font-size: 8px;
-}
-
-.product-content .icon p {
-    font-weight: 700;
-    margin: auto;
-    font-size: 20px;
-}
-
-.product-content p {
-    color: #234CAD
-}
-
-
-.product-content .text-content p:nth-child(1) {
-    font-size: 20;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.product-content .text-content .time {
-    position: absolute;
-    top: 25px;
-    right: 84px;
-}
-
-.product1 {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.product2 {
-    opacity: 0.8;
-    transform: scale(0.8);
-}
-
-.product3 {
-    opacity: 0.6;
-    transform: scale(0.6);
-}
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
