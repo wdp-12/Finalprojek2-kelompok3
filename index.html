@@ -1,456 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Kelompok 3</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about-style.css">
-    <style>
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To the Moon</title>
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  </head>
 
-    <!--nav-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/menu.svg" alt="Menu" style="color: #234CAD;" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div class="btn-header">
-                    <button id="LoginButton">Login</button>
-                    <button id="SignUpButton">Sign up</button>
-                </div>
-            </div>
-        </div>
-    </nav>
-     <!--End nav-->
+  <body>
+    <header class="navbar">
+      <a href="#"><img src="images/logo.svg" alt="" /></a>
+      <a href="#"><img src="images/github.svg" alt="" /></a>
+    </header>
+    <!-- hero section -->
 
-      <!--Banner-->
-    <section id="home" class="container">
-        <div class="banner-wrapper">
-            <div class="text-content">
-                <h3>Business Communications Reinvented</h3>
-                <p>Start communicating with your business team more efficiently with our app.</p>
-                <button id="getApp">Get the app</button>
-            </div>
-    
-            <div class="card-container">
-                <div></div>
-                <div class="card1">
-                    <img src="assets/document.svg" alt="dokumen">
-                </div>
-                <div class="card2">
-                    <div class="card-content">
-                        <div class="progress">
-                            <img src="assets/upload.svg" alt="Upload">
-                        </div>
-                        <div class="text-content">
-                            <div class="text-container">
-                                <p>Uploading Document</p>
-                                <p>7,09 / 108,98 GB</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card3">
-                    <div class="card-content">
-                        <div>
-                            <div class="icon">
-                                <img src="assets/calendar.svg" alt="kalender">
-                            </div>
-                            <div class="text-content">
-                                <p>Team Meeting</p>
-                                <p>2:30 PM 15 Apr 2020</p>
-                            </div>
-                        </div>
-                        <div class="meeting-parts">
-                            <div class="special-color">
-                                <p>JM</p>
-                            </div>
-                            <div class="special-color">
-                                <p>AM</p>
-                            </div>
-                            <div class="special-color">
-                                <p>KD</p>
-                            </div>
-                            <div class="special-color">
-                                <p>8+</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card4">
-                    <div class="card-content">
-                        <div class="icon person-init special-color">
-                            <p>JS</p>
-                            <div class="notif">
-                                <p>3</p>
-                            </div>
-                        </div>
-                        <div class="text-content">
-                            <p>Jhon Smith</p>
-                            <p>Hello, are you available for a pro…</p>
-                            <p class="time">11:02 AM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class=".absolute-card">
-                    <div class="card5">
-                        <div class="card-content">
-                            <div class="progress">
-                                <img src="assets/upload.svg" alt="Upload">
-                            </div>
-                            <div class="text-content">
-                                <p>1,73 / 2.09 GB</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card6">
-                        <div class="card-content">
-                            <div class="icon special-color">
-                                <p>AB</p>
-                                <div class="notif">
-                                    <p>2</p>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <p>Anna Brooks</p>
-                                <p>Hi, how are you doing today?</p>
-                                <p class="time">2:09 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card7">
-                        <div class="card-content">
-                            <div class="icon">
-                                <img src="assets/save.svg" alt="Save">
-                            </div>
-                            <div class="text-content">
-                                <p>Message Saved</p>
-                                <p>You have successfully saved this message</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card8">
-                        <img src="assets/message.svg" alt="message">
-                    </div>
-                </div>
-            </div>
+    <section class="hero">
+      <img
+        src="images/Home-Images/langit.svg"
+        alt="langit"
+        id="langit"
+        class="parallax"
+      />
+      <img
+        src="images/Home-Images/bulan.png"
+        alt="bulan"
+        id="bulan"
+        class="parallax-bulan"
+        data-speedx="0.3"
+        data-speedy="0.3"
+      />
+      <div class="text">
+        <h1>To The <span>Moon's</span> Space</h1>
+        <div class="btn-scroll">
+          <a href="#"> Scroll Down </a>
+          <img src="images/Home-Images/scroll.svg" alt="scroll" />
         </div>
+      </div>
+
+      <img
+        src="images/Home-Images/tanahgelap.svg"
+        alt="tanah"
+        id="tanah"
+        class="parallax"
+      />
     </section>
-    </div>
-        <!--End Banner-->
-
-    <!--Fitur 1-->
-    <!--End Fitur 1-->
-
-     <!--Fitur 2-->
-     <!--End Fitur 2-->
-
-      <!--about-->
-      <div class="container mt-5" id="about">
-        <div class="row">
-            <div class="col">
-                <div class="right-section">
-                    <h3>Increase the <br>efficiency within <br> your company</h3>
-                    <p>Our app is the great way for you to start <br> getting more tasks done.</p>
-                    <button class="btn2 d-flex flex-wrap align-items-center justify-content-center" type="submit">Get the
-                        app</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="about-section">
-                    <div class="schedule-container d-flex mt-5">
-                        <div class="component">
-                            <div class="grid-container d-flex py-5 py-lg-0">
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Daily Stand Up
-                                                <small class="fw-normal">2:30 PM 15 Apr 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                KU
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                MG
-                                            </div>
-                                            <div class="circle-3 d-flex justify-content-center align-items-center">
-                                                AI
-                                            </div>
-                                            <div class="circle-4 d-flex justify-content-center align-items-center">
-                                                +29
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Daily Emails
-                                                <small class="fw-normal">8:30 AM 28 Apr 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                MC
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                KY
-                                            </div>
-                                            <div class="circle-3 d-flex justify-content-center align-items-center">
-                                                AJ
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="grid-container d-flex py-5 py-lg-0">
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Marketing Call
-                                                <small class="fw-normal">4:45 PM 30 May 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                CO
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                VN
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Project Meeting
-                                                <small class="fw-normal">5:45 PM 1 Jun 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                TR
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                DE
-                                            </div>
-                                            <div class="circle-3 d-flex justify-content-center align-items-center">
-                                                PB
-                                            </div>
-                                            <div class="circle-4 d-flex justify-content-center align-items-center">
-                                                +2
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="grid-container d-flex py-5 py-lg-0">
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Presentation
-                                                <small class="fw-normal">10:15 AM 2 Jul 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                KU
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                MG
-                                            </div>
-                                            <div class="circle-3 d-flex justify-content-center align-items-center">
-                                                AI
-                                            </div>
-                                            <div class="circle-4 d-flex justify-content-center align-items-center">
-                                                +29
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid">
-                                    <div class="schedule-box d-flex align-items-center py-4 px-4 flex-wrap gap-3">
-                                        <div class="schedule-box-svg d-flex justify-content-center align-items-center">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="30" cy="30" r="29" stroke="#234CAD" stroke-width="2" />
-                                                <path
-                                                    d="M22.3333 23.3333C22.3333 23.8856 22.781 24.3333 23.3333 24.3333C23.8856 24.3333 24.3333 23.8856 24.3333 23.3333H22.3333ZM24.3333 20C24.3333 19.4477 23.8856 19 23.3333 19C22.781 19 22.3333 19.4477 22.3333 20H24.3333ZM26.7778 23.3333C26.7778 23.8856 27.2255 24.3333 27.7778 24.3333C28.3301 24.3333 28.7778 23.8856 28.7778 23.3333H26.7778ZM28.7778 20C28.7778 19.4477 28.3301 19 27.7778 19C27.2255 19 26.7778 19.4477 26.7778 20H28.7778ZM31.2222 23.3333C31.2222 23.8856 31.6699 24.3333 32.2222 24.3333C32.7745 24.3333 33.2222 23.8856 33.2222 23.3333H31.2222ZM33.2222 20C33.2222 19.4477 32.7745 19 32.2222 19C31.6699 19 31.2222 19.4477 31.2222 20H33.2222ZM35.6667 23.3333C35.6667 23.8856 36.1144 24.3333 36.6667 24.3333C37.219 24.3333 37.6667 23.8856 37.6667 23.3333H35.6667ZM37.6667 20C37.6667 19.4477 37.219 19 36.6667 19C36.1144 19 35.6667 19.4477 35.6667 20H37.6667ZM40 28.7778C40.5523 28.7778 41 28.3301 41 27.7778C41 27.2255 40.5523 26.7778 40 26.7778V28.7778ZM20 26.7778C19.4477 26.7778 19 27.2255 19 27.7778C19 28.3301 19.4477 28.7778 20 28.7778V26.7778ZM24.3333 23.3333V20H22.3333V23.3333H24.3333ZM28.7778 23.3333V20H26.7778V23.3333H28.7778ZM33.2222 23.3333V20H31.2222V23.3333H33.2222ZM37.6667 23.3333V20H35.6667V23.3333H37.6667ZM40 26.7778H20V28.7778H40V26.7778ZM22.2222 41H37.7778V39H22.2222V41ZM37.7778 41C39.5574 41 41 39.5574 41 37.7778H39C39 38.4528 38.4528 39 37.7778 39V41ZM41 37.7778V24.4444H39V37.7778H41ZM41 24.4444C41 22.6649 39.5574 21.2222 37.7778 21.2222V23.2222C38.4528 23.2222 39 23.7694 39 24.4444H41ZM37.7778 21.2222H22.2222V23.2222H37.7778V21.2222ZM22.2222 21.2222C20.4426 21.2222 19 22.6649 19 24.4444H21C21 23.7694 21.5472 23.2222 22.2222 23.2222V21.2222ZM19 24.4444V37.7778H21V24.4444H19ZM19 37.7778C19 39.5574 20.4426 41 22.2222 41V39C21.5472 39 21 38.4528 21 37.7778H19Z"
-                                                    fill="#234CAD" />
-                                            </svg>
-                                            <div class="text d-flex flex-column justify-content-center fw-bold">
-                                                Sales Call
-                                                <small class="fw-normal">12:30 PM 5 May 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="circles d-flex fw-bold">
-                                            <div class="circle-1 d-flex justify-content-center align-items-center">
-                                                MC
-                                            </div>
-                                            <div class="circle-2 d-flex justify-content-center align-items-center">
-                                                KY
-                                            </div>
-                                            <div class="circle-3 d-flex justify-content-center align-items-center">
-                                                AJ
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                              
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    </div>
-    <!--end about-->
-
-
-    <!--Pricing-->
-    <section class="price" id="price">
-        <h2>Explore our simple pricing</h2>
-        <p>We offer one of the most competitive prices on the <br> market for everyone.</p>
-
-        <div class="price-countainer">
-            <div class="price-box">
-                <h3>Basic</h3>
-                <h2>$9</h2>
-                <p>Per month</p>
-                <a href="#" class="btn-price">Learn more</a>
-            </div>
-
-            <div class="price-box2">
-                <h3>Premium</h3>
-                <h2>$29</h2>
-                <p>Per month</p>
-                <a href="#" class="btn-price2">Get Started</a>
-            </div>
-
-            <div class="price-box">
-                <h3>Enterprise</h3>
-                <h2>$129</h2>
-                <p>Per month</p>
-                <a href="#" class="btn-price">Learn more</a>
-            </div>
-
+    <!-- moon portrait -->
+    <div class="moon-portrait">
+      <div class="portrait-container">
+        <div class="text-content">
+          <h1>PORTRAIT OF <span>MOON'S</span></h1>
         </div>
-    </section>
-    <div class="container">
-        <h2><b>Sign up for our newsletter</b></h2>
-        <p>Receive latest news, updates, discounts and<br>
-            many other things every week.</p>
-        <form action="/submit-form" method="post">
-            <input type="email" name="email" id="email" placeholder="Enter your email address" required ><button type="submit">></button>
-            
-        </form>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card-container">
+          <input type="radio" name="slide" id="card1" checked />
+          <label for="card1" class="card"></label>
+          <input type="radio" name="slide" id="card2" />
+          <label for="card2" class="card"></label>
+          <input type="radio" name="slide" id="card3" />
+          <label for="card3" class="card"></label>
+          <input type="radio" name="slide" id="card4" />
+          <label for="card4" class="card"></label>
+        </div>
+        <div class="batu1">
+          <img src="images/Moon-Portrait/batu.svg" alt="" />
+        </div>
+        <div class="batu2">
+          <img src="images/Moon-Portrait/batu.svg" alt="" />
+        </div>
+        <div class="batu3">
+          <img src="images/Moon-Portrait/batu.svg" alt="" />
+        </div>
+      </div>
     </div>
 
-    <div class="row mt-2 justify-content-center">
-        <div class="col-lg-2">
-            <div>
-                <h5><b>Starup.io</b></h5>
-                © 2020 - All rights reserved <br>
-                reserved
-            </div>
+    <!-- Section 3 -->
+    <div class="section3">
+      <img class="section3-top" src="images/Section3-Image/sec3_top.svg" alt="">
+      <div class="section3-container">
+        <div class="section3-moon">
+          <img src="images/Section3-Image/sec3_moon.svg" alt="" id="moon">
         </div>
-        <div class="col-lg-2">
-            <div>
-                <h5><b>Product</b></h5>
-                Benefits <br>
-                Feedback <br>
-                Features
-            </div>
+        <div class="section3-content">
+          <h1>To the <span>Moon's</span></h1>
+          <h1>Space</h1>
         </div>
-        <div class="col-lg-2">
-            <div>
-                <h5><b>About</b></h5>
-                Company <br>
-               Team
-            </div>
-        </div>
-        <div class="col-lg-2">
-            <div>
-                <h5><b>Support</b></h5>
-                Get Help <br>
-                Terms of service 
-            </div>
-        </div>
+        <img class="section3-bottom" src="images/Section3-Image/sec3_bottom.svg" alt="">
+      </div>
+
+    <div id="progres">
+      <span id="progres-value">
+        <i class="bi bi-chevron-double-up"></i>
+      </span>
     </div>
-</div>
-     <!--End Pricing-->
 
-     <!--Kontak-->
-     <!--End Kontak-->
 
-      <!--Footer-->
-     <!--End Footer-->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
